@@ -10,7 +10,7 @@ public class GardenAdventure {
         Scanner key = new Scanner(System.in);
 
         System.out.println("Welcome to My Garden! Would you like to enter the Maze, wander the Rose Garden, explore the Vegetable Patch, " +
-                "go inside the Greenhouse, or visit the Fountain? (Maze/Rose/Veg/Green/Fount)");
+                "go inside the Greenhouse, or visit the Fountain? (Maze/Rose/Vegetable/Greenhouse/Fountain)");
         level1 = key.next();
         if(level1.equalsIgnoreCase("Maze")){ //  MAZE PATH
             System.out.println("Do you want to go right or left? (Right/Left)");
@@ -26,16 +26,16 @@ public class GardenAdventure {
                     }else if(level4.equalsIgnoreCase("Green")){
                         System.out.println("Arrrrggghhhhh! The bunny kills you.");
                     }else{
-                        System.out.println("Arrrrggghhhhh! The bunny kills you.");
+                        System.out.println("Arrrrggghhhhh! Invalid answer. The bunny kills you.");
                     }
                 }else if (level3.equalsIgnoreCase("Run")){
                     System.out.println("Run away! Run away! Would you like to keep searching for the Holy Grail or call it a day and go home?" +
                             "(Grail/Home)");
                     level4 = key.next();
                     if(level4.equalsIgnoreCase("Grail")){
-                        System.out.println("Still searching . . .");
+                        System.out.println("You get flamed by the dragon guarding the Holy Grail and die.");
                     }else if(level4.equalsIgnoreCase("Home")){
-                        System.out.println("Now that's a good idea.  Course it's a good idea! You receive a Garden Adventure bumper sticker on the way out.");
+                        System.out.println("Now that's a good idea!  Course it's a good idea! You receive a Garden Adventure bumper sticker on the way out.");
                     }else{
                         System.out.println("Invalid Answer. Remain stuck in the maze forever!");
                     }
@@ -43,7 +43,7 @@ public class GardenAdventure {
                     System.out.println("Invalid answer.  The bunny will attack you now!");
                 }
             }else if(level2.equalsIgnoreCase("Left")){
-                System.out.println("Uh, oh! It's a sphinx! If you want to keep going, you'll have to answer a riddle. If you get it wrong, " +
+                System.out.println("Uh, oh! It's a sphinx! To keep going, you have to answer a riddle. If you get it wrong, " +
                         "she'll attack you. Do you want to keep going? (Yes/No)");
                 level3 = key.next();
                 if(level3.equalsIgnoreCase("Yes")){
@@ -54,7 +54,7 @@ public class GardenAdventure {
                     }else if (level4.equalsIgnoreCase("Zebra")){
                         System.out.println("You may pass. The maze exit is just around the bend. Here's a complimentary Garden Adventure car magnet!");
                     }else{
-                        System.out.println("You're sphinx food!");
+                        System.out.println("Invalid answer. You're sphinx food!");
                     }
                 }else if(level3.equalsIgnoreCase("No")){
                     System.out.println("You take a different fork and find some of the family pets.  Do you want to pet the cat or the dog? (Cat/Dog)");
@@ -67,7 +67,7 @@ public class GardenAdventure {
                         System.out.println("Invalid answer. You're stuck in my maze forever and a day!");
                     }
                 }else{
-                    System.out.println("Invalid answers get you eaten by the sphinx.");
+                    System.out.println("Invalid answer. You get eaten by the sphinx.");
                 }
             }else{
                 System.out.println("Invalid answer. Now you are fated to haunt these grounds forevermore.");
@@ -94,12 +94,12 @@ public class GardenAdventure {
                 } else if (level3.equalsIgnoreCase("Pick")) {
                     System.out.println("Ouch! You just got stung by a bee! You have an allergic reaction and die.");
                 } else {
-                    System.out.println("Invalid answers get you chased by a swarm of bees.");
+                    System.out.println("Invalid answer. You get chased by a swarm of bees.");
                 }
             } else {
                 System.out.println("Invalid answer. You return to the parking lot only to find you have a flat tire.");
             }
-        }else if(level1.equalsIgnoreCase("Veg")) { //  VEGETABLE PATCH PATH
+        }else if(level1.equalsIgnoreCase("Vegetable")) { //  VEGETABLE PATCH PATH
             System.out.println("Please help me out.  Do you pick up the watering can or the hoe? (Can/Hoe)");
             level2 = key.next();
             if (level2.equalsIgnoreCase("Can")) {
@@ -119,14 +119,14 @@ public class GardenAdventure {
                     System.out.println("Do you toss the can gently or go long? (Gently/Long)");
                     level4 = key.next();
                     if (level4.equalsIgnoreCase("Gently")) {
-                        System.out.println("Thank you for playing with Peter and not stepping on the plants. Enjoy some lemonade and carrot cookies.");
+                        System.out.println("Thank you for playing with Peter and not stepping on the plants. Enjoy some lemonade and carrot cookies on the veranda.");
                     } else if (level4.equalsIgnoreCase("Long")) {
                         System.out.println("You've trampled my plants! My vegetable patch is ruined! Release the hounds! . . . You don't survive the mauling.");
                     } else {
                         System.out.println("Invalid Answer. You better run, better run, faster than my attack bunny!");
                     }
                 } else {
-                    System.out.println("Invalid answers get you chased by my attack bunny!");
+                    System.out.println("Invalid answer. You get chased by my attack bunny!");
                 }
             } else if (level2.equalsIgnoreCase("Hoe")) {
                 System.out.println("Do you want to weed the carrots or the beans? (Carrots/Beans)");
@@ -152,12 +152,12 @@ public class GardenAdventure {
                         System.out.println("Invalid answer. My army of moles chase you from the garden.");
                     }
                 } else {
-                    System.out.println("Invalid answers get you turned into a scarecrow.");
+                    System.out.println("Invalid answer. You get turned into a scarecrow.");
                 }
             } else {
                 System.out.println("Invalid answer. Now you are fated to eat only brussels sprouts forever.");
             }
-        }else if(level1.equalsIgnoreCase("Green")) { //  GREENHOUSE PATH
+        }else if(level1.equalsIgnoreCase("Greenhouse")) { //  GREENHOUSE PATH
             System.out.println("Do you take the left aisle or the right aisle? (Left/Right)");
             level2 = key.next();
             if (level2.equalsIgnoreCase("Left")) {
@@ -166,7 +166,7 @@ public class GardenAdventure {
                 if (level3.equalsIgnoreCase("Photo")) {
                     System.out.println("Photos make great screensavers! Here's a complimentary Garden Adventure trowel!");
                 } else if (level3.equalsIgnoreCase("Plant")) {
-                    System.out.println("Thief! The greenhouse ghoul permanently turns you into a macabre flower pot.");
+                    System.out.println("Thief! The greenhouse ghoul permanently turns you into a macabre stone flower pot.");
                 } else {
                     System.out.println("Invalid answer.  A mimbulus mimbletonia covers you in stinksap.");
                 }
@@ -174,7 +174,7 @@ public class GardenAdventure {
                 System.out.println("Uh, oh! Carnivorous plants! Do you take a photo or move closer to examine it? (Photo/Closer)");
                 level3 = key.next();
                 if (level3.equalsIgnoreCase("Photo")) {
-                    System.out.println("Wow! You caught it eating a fly. I'll silkscreen your photo on a tee-shirt for you!");
+                    System.out.println("Wow! You caught it eating a fly. I'll silkscreen your photo on a Garden Adventure tee-shirt for you!  That'll be $15.99 on your way out.");
                 } else if (level3.equalsIgnoreCase("Closer")) {
                     System.out.println("CHOMP! Nice knowing you.");
                 } else {
@@ -183,16 +183,16 @@ public class GardenAdventure {
             } else {
                 System.out.println("Invalid answer. You are swallowed by a giant toad.");
             }
-        }else if(level1.equalsIgnoreCase("Fount")) { //  FOUNTAIN PATH
+        }else if(level1.equalsIgnoreCase("Fountain")) { //  FOUNTAIN PATH
             System.out.println("Do you sit on a bench by the fountain or climb in? (Bench/In)");
             level2 = key.next();
             if (level2.equalsIgnoreCase("Bench")) {
                 System.out.println("Would you like to read a book or eat a snack? (Book/Snack)");
                 level3 = key.next();
                 if (level3.equalsIgnoreCase("Book")) {
-                    System.out.println("Pleasant! Oh, dear, the wind blew water on your book.  You and your book survive.");
+                    System.out.println("Pleasant! Oh, dear, the wind blew water on your book. You and your book survive.");
                 } else if (level3.equalsIgnoreCase("Snack")) {
-                    System.out.println("Hmm.  The bee likes your snack, too. And now it stung you.  Ouch! You survive but your hand hurts for several hours.");
+                    System.out.println("Hmm.  The bee likes your snack, too. And now it stung you. Ouch! You survive but your hand hurts for several hours.");
                 } else {
                     System.out.println("Invalid answer. A bird poops on your head.");
                 }
@@ -204,10 +204,10 @@ public class GardenAdventure {
                 } else if (level3.equalsIgnoreCase("Climb")) {
                     System.out.println("You slip, crash your head into the fountain rim, and drown.");
                 } else {
-                    System.out.println("Invalid answer. A flock of pidgeotos chase you from the garden.  You survive . . with a massive headache from the pecking.");
+                    System.out.println("Invalid answer. A flock of pidgeotos chase you from the garden.");
                 }
             } else {
-                System.out.println("Invalid answers get you turned into a garden gnome.");
+                System.out.println("Invalid answer. You get turned into a garden gnome.");
             }
         }else{
             System.out.println("Invalid answer. The flowers' aroma sends you into an eternal sleep.");
